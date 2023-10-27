@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        maven {url 'https://android-sdk.is.com/'}
+        maven {url 'https://maven.aliyun.com/repository/gradle-plugin/'}
+        maven {url 'https://maven.aliyun.com/repository/google/'}
+        maven {url 'https://maven.aliyun.com/repository/central/'}
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {url 'https://android-sdk.is.com/'}
+        maven {url 'https://maven.aliyun.com/repository/google/'}
+        maven {url 'https://maven.aliyun.com/repository/central/'}
+    }
+}
+rootProject.name = "My Application"
+include ':app'
+include ':IronSourcePlugin'
